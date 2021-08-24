@@ -1,0 +1,196 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Container",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "IT Services - Report an issue",
+                                    "color": "Light",
+                                    "size": "ExtraLarge",
+                                    "spacing": "Padding"
+                                }
+                            ]
+                        }
+                    ],
+                    "width": "auto",
+                    "verticalContentAlignment": "Center"
+                }
+            ],
+            "spacing": "Medium",
+            "horizontalAlignment": "Left",
+            "style": "emphasis"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "RichTextBlock",
+                    "inlines": [
+                        {
+                            "type": "TextRun",
+                            "text": "NOTE - ",
+                            "color": "Warning",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextRun",
+                            "text": "Please submit your response from the options below..",
+                            "color": "Accent",
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "Small"
+        },
+        {
+            "type": "Container",
+            "separator": true,
+            "items": [
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.ShowCard",
+                            "title": "Computer, Printer, Software",
+                            "card": {
+                                "type":"AdaptiveCard",
+                                "actions": [
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "PC/Laptop",
+                                        "data": {
+                                            "action": "issue-computer-pc"
+                                        }
+                                    },
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "Printing & Scanning",
+                                        "data": {
+                                            "action": "issue-computer-printing"
+                                        }
+                                    },
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "Software",
+                                        "data": {
+                                            "action": "issue-computer-software"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "Action.ShowCard",
+                            "title": "Oracle / E-Business @ Kronos",
+                            "card": {
+                                "type": "AdaptiveCard",
+                                "actions": [
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "Empolyee Self-Service",
+                                        "data": {
+                                            "action": "issue-oracle-employee"
+                                        }
+                                    },
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "iPreform",
+                                        "data": {
+                                            "action": "issue-oracle-iperform"
+                                        }
+                                    },
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "Kronos",
+                                        "data": {
+                                            "action": "issue-oracle-kronos"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "Action.ShowCard",
+                            "title": "Network services",
+                            "card": {
+                                "type": "AdaptiveCard",
+                                "actions": [
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "Remote Access",
+                                        "data": {
+                                            "action": "issue-network-remote"
+                                        }
+                                    },
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "Internet",
+                                        "data": {
+                                            "action": "issue-network-internet"
+                                        }
+                                    },
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "WiFi and other",
+                                        "data": {
+                                            "action": "issue-network-wifi"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "Action.ShowCard",
+                            "title": "Portal, Website, Sharepoint, SMS",
+                            "card": {
+                                "type": "AdaptiveCard",
+                                "actions": [
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "Policy Management",
+                                        "data": {
+                                            "action": "issue-portal-policy"
+                                        }
+                                    },
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "Website",
+                                        "data": {
+                                            "action": "issue-portal-website"
+                                        }
+                                    },
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "Intranet portal",
+                                        "data": {
+                                            "action": "issue-portal-intranet"
+                                        }
+                                    },
+                                    {
+                                        "type": "Action.Submit",
+                                        "title": "SMS Application",
+                                        "data": {
+                                            "action": "issue-portal-sms"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "spacing": "None"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}

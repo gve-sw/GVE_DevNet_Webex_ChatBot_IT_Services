@@ -1,0 +1,113 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Container",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Report an issue - Kronos",
+                                    "color": "Light",
+                                    "size":"medium",
+                                    "spacing": "Padding"
+                                }
+                            ]
+                        }
+                    ],
+                    "width": "auto",
+                    "verticalContentAlignment": "Center"
+                }
+            ],
+            "spacing": "Medium",
+            "horizontalAlignment": "Left",
+            "style": "emphasis"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "RichTextBlock",
+                    "inlines": [
+                        {
+                            "type": "TextRun",
+                            "text": "NOTE - ",
+                            "color": "Warning",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextRun",
+                            "text": "Please submit your response from the options below..",
+                            "color": "Accent",
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "Small"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "Container",
+                    "items": [
+                        {
+                            "type": "Input.ChoiceSet",
+                            "id": "action",
+                            "placeholder": "Please choose...",
+                            "choices": [
+                                {
+                                    "title": "Fingerprint is not working",
+                                    "value": "issue-oracle-kronos-Fingerprint is not working"
+                                },
+                                {
+                                    "title": "Issue in scheduling",
+                                    "value": "issue-oracle-kronos-Issue in scheduling"
+                                },
+                                {
+                                    "title": "Device is not working",
+                                    "value": "issue-oracle-kronos-Device is not working"
+                                },
+                                {
+                                    "title": "Unable to login to Kronos",
+                                    "value": "issue-oracle-kronos-Unable to login to Kronos"
+                                },
+                                {
+                                    "title": "Unable to enroll employee",
+                                    "value": "issue-oracle-kronos-Unable to enroll employee"
+                                },
+                                {
+                                    "title": "Issue in Dawami card",
+                                    "value": "issue-oracle-kronos-Issue in Dawami card"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.Submit",
+                            "title": "Submit"
+                        }
+                    ],
+                    "spacing": "None"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}

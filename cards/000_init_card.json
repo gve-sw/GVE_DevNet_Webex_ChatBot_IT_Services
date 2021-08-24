@@ -1,0 +1,97 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://cdn4.iconfinder.com/data/icons/computer-technology-6/64/Error-computer-notice-warning-512.png",
+                            "size": "Medium",
+                            "height": "50px"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Container",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "IT Services",
+                                    "color": "Light",
+                                    "size": "ExtraLarge",
+                                    "spacing": "Padding"
+                                }
+                            ]
+                        }
+                    ],
+                    "width": "auto",
+                    "verticalContentAlignment": "Center"
+                }
+            ],
+            "spacing": "Medium",
+            "horizontalAlignment": "Left",
+            "style": "emphasis"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "RichTextBlock",
+                    "inlines": [
+                        {
+                            "type": "TextRun",
+                            "text": "NOTE - ",
+                            "color": "Warning",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextRun",
+                            "text": "Please submit your response from the options below..",
+                            "color": "Accent",
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "Small"
+        },
+        {
+            "type": "Container",
+            "separator": true,
+            "items": [
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.Submit",
+                            "title": "Submit a new request",
+                            "style": "positive",
+                            "data": {
+                                "action": "request"
+                            }
+                        },
+                        {
+                            "type": "Action.Submit",
+                            "title": "Report an issue",
+                            "style": "destructive",
+                            "data": {
+                                "action": "issue"
+                            }
+                        }
+                    ],
+                    "spacing": "None"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}

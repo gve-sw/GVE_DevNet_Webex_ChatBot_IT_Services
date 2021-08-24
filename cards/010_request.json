@@ -1,0 +1,97 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Container",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "IT Services - New Request",
+                                    "color": "Light",
+                                    "size": "ExtraLarge",
+                                    "spacing": "Padding"
+                                }
+                            ]
+                        }
+                    ],
+                    "width": "auto",
+                    "verticalContentAlignment": "Center"
+                }
+            ],
+            "spacing": "Medium",
+            "horizontalAlignment": "Left",
+            "style": "emphasis"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "RichTextBlock",
+                    "inlines": [
+                        {
+                            "type": "TextRun",
+                            "text": "NOTE - ",
+                            "color": "Warning",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextRun",
+                            "text": "Please submit your response from the options below..",
+                            "color": "Accent",
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "Small"
+        },
+        {
+            "type": "Container",
+            "separator": true,
+            "items": [
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.Submit",
+                            "title": "Software request",
+                            "data": {
+                                "action": "request-software"
+                            }
+                        },
+                        {
+                            "type": "Action.Submit",
+                            "title": "Hardware request",
+                            "data": {
+                                "action": "request-hardware"
+                            }
+                        },
+                        {
+                            "type": "Action.Submit",
+                            "title": "Access request",
+                            "data": {
+                                "action": "request-access"
+                            }
+                        },
+                        {
+                            "type": "Action.Submit",
+                            "title": "Request accessories",
+                            "data": {
+                                "action": "request-accessories"
+                            }
+                        }
+                    ],
+                    "spacing": "None"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}

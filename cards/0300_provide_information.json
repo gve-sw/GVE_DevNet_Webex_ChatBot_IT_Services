@@ -1,0 +1,150 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Container",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "IT Services - New Request",
+                                    "color": "Light",
+                                    "size": "ExtraLarge",
+                                    "spacing": "Padding"
+                                }
+                            ]
+                        }
+                    ],
+                    "width": "auto",
+                    "verticalContentAlignment": "Center"
+                }
+            ],
+            "spacing": "Medium",
+            "horizontalAlignment": "Left",
+            "style": "emphasis"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "RichTextBlock",
+                    "inlines": [
+                        {
+                            "type": "TextRun",
+                            "text": "NOTE - ",
+                            "color": "Warning",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextRun",
+                            "text": "Please fill in the request information below and click submit..",
+                            "color": "Accent",
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "Small"
+        },
+        {
+            "type": "Container",
+            "separator": true,
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Specify the location of your request:"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "userdata-location",
+                    "placeholder": "Location",
+                    "style": "text",
+                    "isMultiline": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Email:"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "userdata-email",
+                    "placeholder": "Email",
+                    "style": "email"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Phone:"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "userdata-phone",
+                    "placeholder": "Phone",
+                    "style": "tel"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Computer name:"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "userdata-computer",
+                    "placeholder": "Computer name",
+                    "style": "text"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "For access requests, please specify the shared folder name:"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "userdata-shared_folder_name",
+                    "placeholder": "Shared folder name",
+                    "style": "text"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "For access requests, please specify the shared folder path:"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "userdata-shared_folder_path",
+                    "placeholder": "Shared folder path",
+                    "style": "text"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Other comments:"
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "userdata-comments",
+                    "placeholder": "Comments",
+                    "style": "text",
+                    "isMultiline": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.Submit",
+                            "title": "Submit"
+                        }
+                    ],
+                    "spacing": "None"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}
